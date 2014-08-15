@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Diccionario de la &RAE]
+@="c:\\windows\\web\\RAE.html"
+"contexts"=hex:10
+
+

@@ -1,0 +1,35 @@
+<script language="JavaScript" type="text/javascript">
+	var brow = '';
+	var txt = '';
+	var Sel = '';
+	
+	brow = navigator.userAgent.toLowerCase();
+
+	if (brow.indexOf("msie") == -1)
+	{
+		txt = external.menuArguments.document.getSelection();
+	}
+	else 
+	{
+		txt = external.menuArguments.document.selection.createRange().text;
+	};
+
+	Sel = txt.replace(new RegExp('([\\f\\n\\r\\t\\v ])+', 'g')," ");
+	Sel = Sel.toLowerCase();
+
+	if(Sel)
+	{
+    		
+
+		window.open('http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&LEMA=' +escape(Sel),'','toolbar=yes,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=600');
+
+		//location.href='http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&LEMA='+escape(Sel);
+	}
+	else
+	{
+		alert("La selección no es válida." + txt);
+	};
+
+
+</script>
+

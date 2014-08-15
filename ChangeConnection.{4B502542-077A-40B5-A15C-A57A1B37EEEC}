@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiccionariosRAEOnline", "DiccionarioRAEOnline\DiccionariosRAEOnline.csproj", "{221A162B-3ABC-47EE-A6FA-68132F7044C7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DiccionariosRAE", "DiccionarioSetup\DiccionarioSetup.vdproj", "{40D0F6C0-8BEE-46F2-B585-2F1853F15A93}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DiccionarioRAEOnline\\DiccionariosRAEOnline.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DiccionarioRAEOnline\\
+		SccProjectUniqueName2 = DiccionarioSetup\\DiccionarioSetup.vdproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = DiccionarioSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{221A162B-3ABC-47EE-A6FA-68132F7044C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221A162B-3ABC-47EE-A6FA-68132F7044C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221A162B-3ABC-47EE-A6FA-68132F7044C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221A162B-3ABC-47EE-A6FA-68132F7044C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D0F6C0-8BEE-46F2-B585-2F1853F15A93}.Debug|Any CPU.ActiveCfg = Debug
+		{40D0F6C0-8BEE-46F2-B585-2F1853F15A93}.Release|Any CPU.ActiveCfg = Release
+		{40D0F6C0-8BEE-46F2-B585-2F1853F15A93}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
