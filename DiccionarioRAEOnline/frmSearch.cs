@@ -21,27 +21,27 @@ namespace DiccionarioRAEOnline
      }
 	public class SearchForm : System.Windows.Forms.Form
 	{
-		private System.Windows.Forms.TextBox txtSearch;
-		private System.Windows.Forms.Button btnSearch;
-		private System.Windows.Forms.ErrorProvider er;
-		private System.Windows.Forms.NotifyIcon ni;
-          private System.Windows.Forms.GroupBox grp;
-		private System.Windows.Forms.Button btnBack;
-		private System.Windows.Forms.Button btnForward;
-          private System.Windows.Forms.ToolTip tt;
-		private System.ComponentModel.IContainer components;
-          private WebBrowser ie;
-          private GroupBox grpSearchBy;
-          private ComboBox cboSearchType;
-          private RadioButton rbDoubts;
-          private RadioButton rbRAE;
-          private ContextMenuStrip cm;
-          private ToolStripMenuItem openToolStripMenuItem;
-          private ToolStripMenuItem cerrarToolStripMenuItem;
-          private Label label1;
-          private Label label2;
-          private LinkLabel ll;
-          private Label lblDirectSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ErrorProvider er;
+        private System.Windows.Forms.NotifyIcon ni;
+        private System.Windows.Forms.GroupBox grp;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.ToolTip tt;
+        private System.ComponentModel.IContainer components;
+        private WebBrowser ie;
+        private GroupBox grpSearchBy;
+        private ComboBox cboSearchType;
+        private RadioButton rbDoubts;
+        private RadioButton rbRAE;
+        private ContextMenuStrip cm;
+        private ToolStripMenuItem openToolStripMenuItem;
+        private ToolStripMenuItem cerrarToolStripMenuItem;
+        private Label label1;
+        private Label label2;
+        private LinkLabel ll;
+        private Label lblDirectSearch;
 
 		private bool fromMenu = false;
 
@@ -116,22 +116,21 @@ namespace DiccionarioRAEOnline
             // 
             // txtSearch
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(101, 67);
+            this.txtSearch.Location = new System.Drawing.Point(96, 74);
             this.txtSearch.MaxLength = 100;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(756, 30);
+            this.txtSearch.Size = new System.Drawing.Size(567, 30);
             this.txtSearch.TabIndex = 2;
             this.tt.SetToolTip(this.txtSearch, "Entre una sola palabra a la vez");
             // 
             // btnSearch
             // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Location = new System.Drawing.Point(687, 117);
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearch.Location = new System.Drawing.Point(669, 74);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(170, 39);
+            this.btnSearch.Size = new System.Drawing.Size(120, 39);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Buscar";
             this.tt.SetToolTip(this.btnSearch, "Oprima para buscar");
@@ -148,7 +147,7 @@ namespace DiccionarioRAEOnline
             this.ie.Location = new System.Drawing.Point(3, 26);
             this.ie.MinimumSize = new System.Drawing.Size(20, 20);
             this.ie.Name = "ie";
-            this.ie.Size = new System.Drawing.Size(920, 385);
+            this.ie.Size = new System.Drawing.Size(803, 362);
             this.ie.TabIndex = 0;
             this.tt.SetToolTip(this.ie, "Resultados");
             // 
@@ -162,43 +161,43 @@ namespace DiccionarioRAEOnline
             // 
             // cm
             // 
+            this.cm.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cm.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.cerrarToolStripMenuItem});
             this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(119, 52);
+            this.cm.Size = new System.Drawing.Size(125, 56);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
             this.openToolStripMenuItem.Text = "&Abrir";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
             this.cerrarToolStripMenuItem.Text = "&Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
             // grp
             // 
-            this.grp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.grp.Controls.Add(this.ie);
-            this.grp.Location = new System.Drawing.Point(12, 247);
+            this.grp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.grp.Location = new System.Drawing.Point(10, 286);
             this.grp.Name = "grp";
-            this.grp.Size = new System.Drawing.Size(926, 414);
+            this.grp.Size = new System.Drawing.Size(809, 391);
             this.grp.TabIndex = 6;
             this.grp.TabStop = false;
             this.grp.Text = "Resultados";
             // 
             // btnBack
             // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(12, 201);
+            this.btnBack.Location = new System.Drawing.Point(96, 169);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(76, 39);
             this.btnBack.TabIndex = 1;
@@ -208,8 +207,9 @@ namespace DiccionarioRAEOnline
             // 
             // btnForward
             // 
+            this.btnForward.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnForward.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForward.Location = new System.Drawing.Point(114, 201);
+            this.btnForward.Location = new System.Drawing.Point(178, 169);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(75, 39);
             this.btnForward.TabIndex = 2;
@@ -219,8 +219,7 @@ namespace DiccionarioRAEOnline
             // 
             // cboSearchType
             // 
-            this.cboSearchType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboSearchType.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboSearchType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboSearchType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboSearchType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -230,33 +229,37 @@ namespace DiccionarioRAEOnline
             "Búsqueda sin signos diacríticos",
             "Semejanza fonético-ortográfica",
             "Búsqueda aproximada"});
-            this.cboSearchType.Location = new System.Drawing.Point(101, 117);
+            this.cboSearchType.Location = new System.Drawing.Point(96, 119);
             this.cboSearchType.Name = "cboSearchType";
-            this.cboSearchType.Size = new System.Drawing.Size(576, 33);
+            this.cboSearchType.Size = new System.Drawing.Size(567, 33);
             this.cboSearchType.TabIndex = 3;
             // 
             // grpSearchBy
             // 
-            this.grpSearchBy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpSearchBy.Controls.Add(this.label2);
             this.grpSearchBy.Controls.Add(this.label1);
             this.grpSearchBy.Controls.Add(this.rbDoubts);
+            this.grpSearchBy.Controls.Add(this.ll);
             this.grpSearchBy.Controls.Add(this.rbRAE);
+            this.grpSearchBy.Controls.Add(this.lblDirectSearch);
+            this.grpSearchBy.Controls.Add(this.btnForward);
             this.grpSearchBy.Controls.Add(this.txtSearch);
+            this.grpSearchBy.Controls.Add(this.btnBack);
             this.grpSearchBy.Controls.Add(this.cboSearchType);
             this.grpSearchBy.Controls.Add(this.btnSearch);
-            this.grpSearchBy.Location = new System.Drawing.Point(12, 10);
+            this.grpSearchBy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.grpSearchBy.Location = new System.Drawing.Point(10, 50);
             this.grpSearchBy.Name = "grpSearchBy";
-            this.grpSearchBy.Size = new System.Drawing.Size(926, 184);
+            this.grpSearchBy.Size = new System.Drawing.Size(809, 233);
             this.grpSearchBy.TabIndex = 0;
             this.grpSearchBy.TabStop = false;
             this.grpSearchBy.Text = "Configuración de la búsqueda";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 127);
+            this.label2.Location = new System.Drawing.Point(13, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 25);
             this.label2.TabIndex = 6;
@@ -264,8 +267,9 @@ namespace DiccionarioRAEOnline
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 74);
+            this.label1.Location = new System.Drawing.Point(13, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 5;
@@ -273,11 +277,10 @@ namespace DiccionarioRAEOnline
             // 
             // rbDoubts
             // 
-            this.rbDoubts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rbDoubts.Location = new System.Drawing.Point(271, 30);
+            this.rbDoubts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbDoubts.Location = new System.Drawing.Point(228, 39);
             this.rbDoubts.Name = "rbDoubts";
-            this.rbDoubts.Size = new System.Drawing.Size(586, 29);
+            this.rbDoubts.Size = new System.Drawing.Size(474, 29);
             this.rbDoubts.TabIndex = 1;
             this.rbDoubts.Text = "Diccionario panhispánico de dudas";
             this.rbDoubts.UseVisualStyleBackColor = true;
@@ -285,9 +288,10 @@ namespace DiccionarioRAEOnline
             // 
             // rbRAE
             // 
+            this.rbRAE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbRAE.AutoSize = true;
             this.rbRAE.Checked = true;
-            this.rbRAE.Location = new System.Drawing.Point(15, 30);
+            this.rbRAE.Location = new System.Drawing.Point(14, 39);
             this.rbRAE.Name = "rbRAE";
             this.rbRAE.Size = new System.Drawing.Size(174, 29);
             this.rbRAE.TabIndex = 0;
@@ -297,8 +301,9 @@ namespace DiccionarioRAEOnline
             // 
             // ll
             // 
+            this.ll.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ll.AutoSize = true;
-            this.ll.Location = new System.Drawing.Point(424, 215);
+            this.ll.Location = new System.Drawing.Point(455, 176);
             this.ll.Name = "ll";
             this.ll.Size = new System.Drawing.Size(208, 25);
             this.ll.TabIndex = 8;
@@ -308,8 +313,9 @@ namespace DiccionarioRAEOnline
             // 
             // lblDirectSearch
             // 
+            this.lblDirectSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDirectSearch.AutoSize = true;
-            this.lblDirectSearch.Location = new System.Drawing.Point(216, 215);
+            this.lblDirectSearch.Location = new System.Drawing.Point(259, 176);
             this.lblDirectSearch.Name = "lblDirectSearch";
             this.lblDirectSearch.Size = new System.Drawing.Size(207, 25);
             this.lblDirectSearch.TabIndex = 9;
@@ -321,13 +327,10 @@ namespace DiccionarioRAEOnline
             this.AccessibleDescription = "Diccionarios de RAE en línea";
             this.AccessibleName = "Diccionarios de RAE en línea";
             this.AutoScaleBaseSize = new System.Drawing.Size(10, 23);
-            this.ClientSize = new System.Drawing.Size(951, 677);
-            this.Controls.Add(this.lblDirectSearch);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(829, 687);
             this.Controls.Add(this.grpSearchBy);
             this.Controls.Add(this.grp);
-            this.Controls.Add(this.ll);
-            this.Controls.Add(this.btnForward);
-            this.Controls.Add(this.btnBack);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -344,7 +347,6 @@ namespace DiccionarioRAEOnline
             this.grpSearchBy.ResumeLayout(false);
             this.grpSearchBy.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 		#endregion
