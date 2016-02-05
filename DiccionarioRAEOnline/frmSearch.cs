@@ -171,19 +171,19 @@ namespace DiccionarioRAEOnline
             this.openToolStripMenuItem,
             this.cerrarToolStripMenuItem});
             this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(114, 48);
+            this.cm.Size = new System.Drawing.Size(110, 48);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.openToolStripMenuItem.Text = "&Abrir";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.cerrarToolStripMenuItem.Text = "&Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
@@ -376,7 +376,7 @@ namespace DiccionarioRAEOnline
 		{		
 			this.Visible=true;
 			this.WindowState=FormWindowState.Normal;
-               txtSearch.Focus();
+            txtSearch.Focus();
 
 		}
 
@@ -515,6 +515,7 @@ namespace DiccionarioRAEOnline
 
 		private void SearchForm_Load(object sender, System.EventArgs e)
 		{
+            ShowForm();
             cboSearchType.SelectedIndex = 0;
 		}
 
@@ -607,7 +608,6 @@ namespace DiccionarioRAEOnline
 
           }
 
-         
        
-	}
+    }
 }
