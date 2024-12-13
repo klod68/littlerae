@@ -154,3 +154,6 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.vs/DiccionariosRAESolution/v17/DocumentLayout.backup.json
+*.vsidx
+/.vs/DiccionariosRAESolution/v17/DocumentLayout.json

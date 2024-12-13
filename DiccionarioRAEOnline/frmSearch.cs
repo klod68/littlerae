@@ -367,7 +367,7 @@ namespace DiccionarioRAEOnline
 		[STAThread]
 		static void Main() 
 		{
-            if (Process.GetProcessesByName("DiccionarioRAEOnline").Length > 0)
+            if (Process.GetProcessesByName("DiccionarioRAEOnline").Length > 1)
             {
                 return;
             }
