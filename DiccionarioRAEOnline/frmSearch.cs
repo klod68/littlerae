@@ -60,11 +60,10 @@ namespace DiccionarioRAEOnline
 			// Required for Windows Form Designer support
 			//
 			InitializeComponent();
-
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
-		}
+            //
+            // TODO: Add any constructor code after InitializeComponent call
+            //
+        }
 
 		/// <summary>
 		/// Clean up any resources being used.
@@ -368,11 +367,16 @@ namespace DiccionarioRAEOnline
 		[STAThread]
 		static void Main() 
 		{
-			Application.Run(new SearchForm());
-		}
-		#region Methods
+            if (Process.GetProcessesByName("DiccionarioRAEOnline").Length > 0)
+            {
+                return;
+            }
+            Application.Run(new SearchForm());
 
-		private void ShowForm()
+        }
+        #region Methods
+
+        private void ShowForm()
 		{		
 			this.Visible=true;
 			this.WindowState=FormWindowState.Normal;
@@ -516,6 +520,8 @@ namespace DiccionarioRAEOnline
 		private void SearchForm_Load(object sender, System.EventArgs e)
 		{
             ShowForm();
+          
+
             cboSearchType.SelectedIndex = 0;
 		}
 
